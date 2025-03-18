@@ -1,6 +1,6 @@
 :root{
     --branco: #fff5d6;
-    --ciano:#84bfc3;
+    --verde:#1C646D;
 }
 
 *{
@@ -16,12 +16,24 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--ciano);
+    background-color: var(--verde);
     color: var(--branco);
+    background-image: url('../Assests/Imagens/Fundo.jfif');
+    
+}
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Cor preta com opacidade de 50% */
+    z-index: -1; /* Garante que o overlay fique atrás do conteúdo */
 }
 
+
 .container{
-    border: 2px solid var(--branco);
     padding: 20px;
     border-radius: 10px;
     display: flex;
@@ -29,27 +41,32 @@ body{
     justify-content: center;
     align-items: center;
     gap: 2vh;
-    position: relative;
+    position: relative; 
     padding-top: 70px;
     max-width: 90%;
 }
 
-.img-logo{
+.img-logo {
     position: absolute;
     top: -17%;
-    border-radius: 100%;
-    border: 2px solid var(--branco);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
 
+
 input, button{
-    padding: 10px;
+
+    padding: 15px;
     border-radius: 999px;
     border: none;
     background-color: transparent;
     color: var(--branco);
     border: 2px solid var(--branco);
     width: 100%;
-    max-width: 300px; /* Limita o tamanho máximo para inputs e botões */
+    max-width: 500px; /* Limita o tamanho máximo para inputs e botões */
 }
 
 button{
@@ -57,8 +74,8 @@ button{
 }
 
 button:hover{
-    color: var(--ciano);
-    background-color: var(--branco);
+    color: var(--branco);
+    background-color: var(--verde);
     cursor: pointer;
 }
 
@@ -83,7 +100,7 @@ button:hover{
     gap: 2vw;
     width: 50%;
     background-color: lightpink;
-    color: var(--ciano);
+    color: var(--verde);
     padding: 10px;
     position: absolute;
     bottom: 10px;
@@ -92,8 +109,8 @@ button:hover{
 
 .error-div button{
     width: 100px;
-    background-color: var(--ciano);
-    border: 2px solid var(--ciano);
+    background-color: var(--verde);
+    border: 2px solid var(--verde);
 }
 
 .error-div button:hover{
