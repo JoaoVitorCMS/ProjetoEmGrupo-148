@@ -20,3 +20,9 @@ body{
     height: auto;
     padding: 10px;
 }
+.card-img-top {
+    width: 100%;
+    height: 350px; /* Ajuste o tamanho de altura conforme necessário */
+    object-fit: cover; /* Garante que a imagem seja cortada ou redimensionada para se ajustar sem distorcer */
+    object-position: center; /* Posiciona a imagem centralizada dentro do espaço disponível */
+}

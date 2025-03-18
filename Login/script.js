@@ -9,7 +9,7 @@ function login(){
         }
         localStorage.setItem("usuario",JSON.stringify(user))
 
-        window.location.href = "../Loja"
+        window.location.href = "../ShowRoom"
     }else{
         document.getElementById("erro-modal").style.display = "flex"
         document.getElementById("nome").style.border = "2px solid lightpink"
