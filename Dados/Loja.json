@@ -1,0 +1,97 @@
+[
+    [
+    {
+        "id":1,
+        "descricao": "Produto 1",
+        "imagem": "../Assests/ARTE DA GUERRA/p1.webp",
+        "preco": 15.0
+    },
+    {
+        "id":2,
+        "descricao": "Produto 2",
+        "imagem": "../Assests/OS 48 DO PODER/p2.webp",
+        "preco": 20.0
+    },
+    {
+        "id":3,
+        "descricao": "Produto 3",
+        "imagem":  "../Assests/O PRINCIPE/p3.webp",
+        "preco": 16.0
+    },
+    {
+        "id":4,
+        "descricao": "Produto 4",
+        "imagem": "../Assests/IT A COISA/p4.webp",
+        "preco": 60.0
+    },
+    {
+        "id":5,
+        "descricao": "Produto 5",
+        "imagem": "../Assests/EU, ROBÔ/p5.webp",
+        "preco": 25.0
+    },
+    {
+        "id":6,
+        "descricao": "Produto 6",
+        "imagem":  "../Assests/1984/p6.webp",
+        "preco": 30.0
+    
+    },
+    {
+        "id":7,
+        "descricao": "Produto 7",
+        "imagem": "../Assests/COLEÇÃO DE HARRY POTTER/p7.webp",
+        "preco": 150.0
+    },
+    {
+        "id":8,
+        "descricao": "Produto 8",
+        "imagem": "../Assests/JOGOS VORAZES/p8.webp",
+        "preco": 20.0
+    },
+    {
+        "id":9,
+        "descricao": "Produto 9",
+        "imagem":  "../Assests/O PODER/p9.webp",
+        "preco": 50.0
+    },
+    {
+        "id":10,
+        "descricao": "Produto 10",
+        "imagem": "../Assests/A ARTE DE VIVER/p10.webp",
+        "preco": 35.0
+    },
+    {
+        "id":11,
+        "descricao": "Produto 11",
+        "imagem": "../Assests/O HERÓI DE MIL FACES/p11.webp",
+        "preco": 20.0
+    },
+    {
+        "id":12,
+        "descricao": "Produto 12",
+        "imagem":  "../Assests/VILÃO/p12.webp",
+        "preco": 80.0
+    },
+
+    {
+        "id":13,
+        "descricao": "Produto 13",
+        "imagem": "../Assests/SOBRE O ERRO/p13.webp",
+        "preco": 39.0
+    },
+    {
+        "id":14,
+        "descricao": "Produto 14",
+        "imagem": "../Assests/O LIVRO DA DECISÃO/p14.webp",
+        "preco": 27.0
+    },
+    {
+        "id":15,
+        "descricao": "Produto 15",
+        "imagem":  "../Assests/DESENHO OCULTOS/p15.webp",
+        "preco": 45.0
+    }
+
+]
+]
