@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR"> <!-- Mudei para português -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +8,148 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Adicionei Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        /* Scroll suave */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Espaço para o footer não ficar escondido */
+        #contato {
+            scroll-margin-top: 80px;
+        }
+        
+        /* Estilos para o footer */
+        footer {
+            background-color: #5a9ea0;
+            color: #fff5d6;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            padding: 0 20px;
+            margin-bottom: 20px;
+        }
+        .footer-section h4 {
+            margin-bottom: 20px;
+        }
+        .footer-section a {
+            color: #fff5d6;
+            text-decoration: none;
+        }
+        .footer-section a:hover {
+            color: #ffb870;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
+
 <body>
-    <a href="../Carrinho">Ir para carrinho</a>
-    <br>
-    <div>
-        <h4 id="perfil"></h4>
-        <div class="idPerfil">
-            Protocolo atual: <p id="idPerfil"></p>
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #5a9ea0;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: #fff5d6;">
+                <img src="../Assests/Logo/Logo-removebg-preview.png" alt="Logo" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" style="color: #fff5d6;">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Carrinho" style="color: #fff5d6;">Carrinho</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Link modificado para apontar para o footer -->
+                        <a class="nav-link" href="#contato" style="color: #fff5d6;">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="padding-top: 80px;"> <!-- Adicionei padding para a navbar fixa -->
+        <div class="logo-container mb-4">
+            <img src="../Assests/Logo/Logo-removebg-preview.png" alt="Globaolibrary" width="400" height="400">
+        </div>
+        <p>Bem vindo <span id="user"></span>, escolha seus produtos!</p>
+        <h2>Quem Somos?</h2>
+        <p>𝑪𝒐𝒎 𝒖𝒎 𝒂𝒄𝒆𝒓𝒗𝒐 𝒄𝒖𝒊𝒅𝒂𝒅𝒐𝒔𝒂𝒎𝒆𝒏𝒕𝒆 𝒔𝒆𝒍𝒆𝒄𝒊𝒐𝒏𝒂𝒅𝒐, 𝒂 𝑮𝒍𝒐𝒃𝒂𝒐𝒍𝒊𝒃𝒓𝒂𝒓𝒚
+            𝒐𝒇𝒆𝒓𝒆𝒄𝒆 𝒖𝒎𝒂 𝒂𝒎𝒑𝒍𝒂 𝒗𝒂𝒓𝒊𝒆𝒅𝒂𝒅𝒆 𝒅𝒆 𝒍𝒊𝒗𝒓𝒐𝒔,
+            𝒅𝒆𝒔𝒅𝒆 𝒄𝒍𝒂́𝒔𝒔𝒊𝒄𝒐𝒔 𝒅𝒂 𝒍𝒊𝒕𝒆𝒓𝒂𝒕𝒖𝒓𝒂 𝒎𝒖𝒏𝒅𝒊𝒂𝒍 𝒂𝒕𝒆́ 𝒍𝒂𝒏𝒄̧𝒂𝒎𝒆𝒏𝒕𝒐𝒔
+            𝒄𝒐𝒏𝒕𝒆𝒎𝒑𝒐𝒓𝒂̂𝒏𝒆𝒐𝒔,
+            𝒄𝒐𝒃𝒓𝒊𝒏𝒅𝒐 𝒕𝒆𝒎𝒂𝒔 𝒄𝒐𝒎𝒐 𝒇𝒊𝒄𝒄̧𝒂̃𝒐, 𝒉𝒊𝒔𝒕𝒐́𝒓𝒊𝒂, 𝒄𝒊𝒆̂𝒏𝒄𝒊𝒂,
+            𝒅𝒆𝒔𝒆𝒏𝒗𝒐𝒍𝒗𝒊𝒎𝒆𝒏𝒕𝒐 𝒑𝒆𝒔𝒔𝒐𝒂𝒍, 𝒆 𝒎𝒖𝒊𝒕𝒐 𝒎𝒂𝒊𝒔.
+            𝑵𝒐𝒔𝒔𝒐 𝒐𝒃𝒋𝒆𝒕𝒊𝒗𝒐 𝒆́ 𝒑𝒓𝒐𝒑𝒐𝒓𝒄𝒊𝒐𝒏𝒂𝒓 𝒖𝒎𝒂 𝒆𝒙𝒑𝒆𝒓𝒊𝒆̂𝒏𝒄𝒊𝒂 𝒖́𝒏𝒊𝒄𝒂 𝒅𝒆
+            𝒅𝒆𝒔𝒄𝒐𝒃𝒆𝒓𝒕𝒂 𝒍𝒊𝒕𝒆𝒓𝒂́𝒓𝒊𝒂,
+            𝒐𝒏𝒅𝒆 𝒄𝒂𝒅𝒂 𝒍𝒊𝒗𝒓𝒐 𝒕𝒆𝒎 𝒐 𝒑𝒐𝒅𝒆𝒓 𝒅𝒆 𝒆𝒙𝒑𝒂𝒏𝒅𝒊𝒓 𝒉𝒐𝒓𝒊𝒛𝒐𝒏𝒕𝒆𝒔 𝒆
+            𝒊𝒏𝒔𝒑𝒊𝒓𝒂𝒓 𝒏𝒐𝒗𝒂𝒔 𝒑𝒆𝒓𝒔𝒑𝒆𝒄𝒕𝒊𝒗𝒂𝒔.
+            𝑨 𝒍𝒐𝒋𝒂 𝒇𝒐𝒊 𝒄𝒓𝒊𝒂𝒅𝒂 𝒑𝒂𝒓𝒂 𝒂𝒕𝒆𝒏𝒅𝒆𝒓 𝒂 𝒍𝒆𝒊𝒕𝒐𝒓𝒆𝒔 𝒅𝒆 𝒕𝒐𝒅𝒂𝒔 𝒂𝒔
+            𝒊𝒅𝒂𝒅𝒆𝒔 𝒆 𝒈𝒐𝒔𝒕𝒐𝒔.
+            𝑺𝒂𝒃𝒆𝒎𝒐𝒔 𝒒𝒖𝒆 𝒐 𝒂𝒎𝒐𝒓 𝒑𝒆𝒍𝒂 𝒍𝒆𝒊𝒕𝒖𝒓𝒂 𝒆́ 𝒂𝒍𝒈𝒐 𝒖𝒏𝒊𝒗𝒆𝒓𝒔𝒂𝒍, 𝒎𝒂𝒔 𝒂
+            𝒇𝒐𝒓𝒎𝒂 𝒄𝒐𝒎𝒐 𝒄𝒂𝒅𝒂 𝒑𝒆𝒔𝒔𝒐𝒂 𝒔𝒆 𝒄𝒐𝒏𝒆𝒄𝒕𝒂 𝒄𝒐𝒎 𝒂 𝒍𝒊𝒕𝒆𝒓𝒂𝒕𝒖𝒓𝒂 𝒆́
+            𝒖́𝒏𝒊𝒄𝒂. 𝑵𝒂 𝑮𝒍𝒐𝒃𝒂𝒐𝒍𝒊𝒃𝒓𝒂𝒓𝒚, 𝒂𝒄𝒓𝒆𝒅𝒊𝒕𝒂𝒎𝒐𝒔 𝒒𝒖𝒆 𝒐𝒔 𝒍𝒊𝒗𝒓𝒐𝒔 𝒕𝒆̂𝒎 𝒐
+            𝒑𝒐𝒅𝒆𝒓 𝒅𝒆 𝒕𝒓𝒂𝒏𝒔𝒇𝒐𝒓𝒎𝒂𝒓 𝒗𝒊𝒅𝒂𝒔. 𝑨𝒐 𝒍𝒐𝒏𝒈𝒐 𝒅𝒆 𝒏𝒐𝒔𝒔𝒂 𝒕𝒓𝒂𝒋𝒆𝒕𝒐́𝒓𝒊𝒂,
+            𝒕𝒆𝒎𝒐𝒔 𝒕𝒓𝒂𝒃𝒂𝒍𝒉𝒂𝒅𝒐 𝒑𝒂𝒓𝒂 𝒄𝒐𝒏𝒔𝒕𝒓𝒖𝒊𝒓 𝒖𝒎𝒂 𝒄𝒐𝒎𝒖𝒏𝒊𝒅𝒂𝒅𝒆 𝒅𝒆
+            𝒍𝒆𝒊𝒕𝒐𝒓𝒆𝒔 𝒒𝒖𝒆 𝒄𝒐𝒏𝒑𝒂𝒓𝒕𝒊𝒍𝒉𝒂𝒎 𝒐 𝒂𝒎𝒐𝒓 𝒑𝒆𝒍𝒐 𝒄𝒐𝒏𝒉𝒆𝒄𝒊𝒎𝒆𝒏𝒕𝒐 𝒆 𝒑𝒆𝒍𝒂
+            𝒅𝒆𝒔𝒄𝒐𝒃𝒆𝒓𝒕𝒂.</p>
+            <br><br><br><br><br><br><br><br><br>
+            <h1>Acervo</h1>
+            <p>Bem vindo <span id="user"></span>, escolha seus produtos!</p>
+        <div class="wrap">
+            <div id="produtos-container" class="row center"></div>
         </div>
     </div>
-    <h1>LOJA</h1>
-    <p>Bem vindo <span id="user"></span> , escolha seus produtos!</p>
-    <br>
-    <h2>Produtos</h2>
-    <br>
-    <div class="wrap">
-        <div id="produtos-container" class="row center"></div>
-    </div>
+
+    <!-- Footer com ID para âncora -->
+    <footer id="contato">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p><i class="bi bi-whatsapp"></i> (41) 99618-4213</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Endereço</h4>
+                <p><i class="bi bi-geo-alt"></i> Rua dos Livros, 123</p>
+                <p>Sala TOP - Sacolas</p>
+                <p>Xique-Xique/BA - CEP 01000-000</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dpt_BR">
+                    <i class="bi bi-facebook"></i> Facebook
+                </a><br>
+                <a href="https://www.instagram.com/">
+                    <i class="bi bi-instagram"></i> Instagram
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 Globaolibrary. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
