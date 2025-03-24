@@ -79,45 +79,45 @@ function gerarDocumentoWord(){
         <head>
             <meta charset="UTF-8" />
             <style>
-                body {
-                    font-family: Arial, sans-serif;
-                    margin: 20px;
-                    padding: 0;
-                    background-color: #f4f4f4;
-                }
-                h1 {
-                    color: #333;
-                    text-align: center;
-                    margin-bottom: 30px;
-                    border-bottom: 2px solid #ddd;
-                    padding-bottom: 10px;
-                }
-                table {
-                    width: 100%;
-                    border-collapse: collapse;
-                    margin-bottom: 20px;
-                }
-                table, th, td {
-                    border: 1px solid #ddd;
-                }
-                th, td {
-                    padding: 10px;
-                    text-align: left;
-                }
-                th {
-                    background-color: #1C646D; /* Cor atualizada */
-                    color: white;
-                }
-                td {
-                    background-color: #fff;
-                }
-                .total {
-                    text-align: right;
-                    font-weight: bold;
-                    font-size: 1.2rem;
-                    margin-top: 20px;
-                }
-            </style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+            h1 {
+                color: #333;
+                text-align: center;
+                margin-bottom: 30px;
+                border-bottom: 2px solid #ddd;
+                padding-bottom: 10px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            table, th, td {
+                border: 1px solid #ddd;
+            }
+            th, td {
+                padding: 10px;
+                text-align: left;
+            }
+            th {
+                background-color: #ffb870; /* Cor atualizada para laranja claro */
+                color: #333; /* Mudei para texto escuro para melhor contraste */
+            }
+            td {
+                background-color: #fff; 
+            }
+            .total {
+                text-align: right;
+                font-weight: bold;
+                font-size: 1.2rem;
+                margin-top: 20px;
+            }
+        </style>
         </head>
         <body>
             <h1>Pedido Confirmado</h1>
