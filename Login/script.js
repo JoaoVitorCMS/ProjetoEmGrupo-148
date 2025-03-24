@@ -9,6 +9,7 @@ function login(){
         }
         localStorage.setItem("usuario",JSON.stringify(user))
 
+
         window.location.href = "../ShowRoom"
     }else{
         document.getElementById("erro-modal").style.display = "flex"
@@ -17,11 +18,13 @@ function login(){
     }
 }
 
+
 function fecharError(){
     document.getElementById("nome").style.border = "2px solid aliceblue"
     document.getElementById("senha").style.border = "2px solid aliceblue"
     document.getElementById("erro-modal").style.display = "none"
 }
+
 
 function showPassword(){
     var inputSenha = document.querySelector("#senha")

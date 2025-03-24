@@ -1,37 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
 /* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #FFF5D6;
+}
+
+
+/* Navbar */
+nav {
+    background-color: #84BFC3;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav h1 {
+    font-size: 1.8rem;
     margin: 0;
+    text-align: center;
+    flex-grow: 1;
+        position: relative;
+        right: 30px;
+}
+
+
+nav .emoji {
+    margin-left: 15px;
+    font-size: 2rem;
+    color: #FFB870;
+}
+
+
+/* Contêiner principal */
+#carrinho-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-a {
-    text-decoration: none;
-    color: #007bff;
-    font-size: 1.2rem;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Título */
-h1 {
-    color: #333;
-}
 
 /* Lista do carrinho */
 #lista {
     list-style: none;
     padding: 0;
     margin: 20px auto;
-    max-width: 400px;
 }
 
+
 #lista li {
-    background: white;
+    background: #f8f9fa;
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
@@ -41,18 +71,6 @@ h1 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.top {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.top:hover {
-    background-color: red;
-}
 
 /* Total */
 #total {
@@ -61,20 +79,24 @@ h1 {
     margin: 20px 0;
 }
 
+
 /* Botão de pedido */
 button {
-    background-color: #28a745;
+    background-color: #D96153;
     color: white;
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+
 button:hover {
-    background-color: #218838;
+    background-color: #B75047;
 }
+
 
 /* Mensagem de pedido confirmado */
 #pedido {
@@ -84,13 +106,15 @@ button:hover {
     left: 50%;
     transform: translateX(-50%);
     padding: 20px;
-    background-color: rgb(0, 19, 128);
+    background-color: #000511;
     color: white;
     font-size: 1.2rem;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+
+/* Ícone de fechar */
 #sc {
     margin-left: 10px;
     background: transparent;
