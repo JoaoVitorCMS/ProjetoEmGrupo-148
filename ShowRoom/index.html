@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-BR"> <!-- Mudei para português -->
+<html lang="en"> 
+
 
 <head>
     <meta charset="UTF-8">
@@ -9,56 +10,10 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Adicionei Bootstrap Icons -->
+ 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <style>
-        /* Scroll suave */
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        /* Espaço para o footer não ficar escondido */
-        #contato {
-            scroll-margin-top: 80px;
-        }
-        
-        /* Estilos para o footer */
-        footer {
-            background-color: #5a9ea0;
-            color: #fff5d6;
-            padding: 30px 0;
-            margin-top: 50px;
-        }
-        .footer-content {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .footer-section {
-            flex: 1;
-            min-width: 250px;
-            padding: 0 20px;
-            margin-bottom: 20px;
-        }
-        .footer-section h4 {
-            margin-bottom: 20px;
-        }
-        .footer-section a {
-            color: #fff5d6;
-            text-decoration: none;
-        }
-        .footer-section a:hover {
-            color: #ffb870;
-        }
-        .footer-bottom {
-            text-align: center;
-            padding-top: 20px;
-            margin-top: 20px;
-        }
-    </style>
 </head>
+
 
 <body>
     <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #5a9ea0;">
@@ -66,8 +21,8 @@
             <a class="navbar-brand" href="#" style="color: #fff5d6;">
                 <img src="../Assests/Logo/Logo-removebg-preview.png" alt="Logo" width="50" height="50">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-emoji">☰</span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
@@ -77,21 +32,20 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../Carrinho" style="color: #fff5d6;">Carrinho</a>
                     </li>
-                    <li class="nav-item">
-                        <!-- Link modificado para apontar para o footer -->
-                        <a class="nav-link" href="#contato" style="color: #fff5d6;">Contato</a>
+                    <li class="nav-item">                                              <a class="nav-link" href="#contato" style="color: #fff5d6;">Contato</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container" style="padding-top: 80px;"> <!-- Adicionei padding para a navbar fixa -->
+
+    <div class="container" style="padding-top: 80px;"> 
         <div class="logo-container mb-4">
             <img src="../Assests/Logo/Logo-removebg-preview.png" alt="Globaolibrary" width="400" height="400">
         </div>
-        <p>Bem vindo <span id="user"></span>, escolha seus produtos!</p>
-        <h2>Quem Somos?</h2>
+       
+        <h2 id="quem-somos">Quem Somos?</h2>
         <p>𝑪𝒐𝒎 𝒖𝒎 𝒂𝒄𝒆𝒓𝒗𝒐 𝒄𝒖𝒊𝒅𝒂𝒅𝒐𝒔𝒂𝒎𝒆𝒏𝒕𝒆 𝒔𝒆𝒍𝒆𝒄𝒊𝒐𝒏𝒂𝒅𝒐, 𝒂 𝑮𝒍𝒐𝒃𝒂𝒐𝒍𝒊𝒃𝒓𝒂𝒓𝒚
             𝒐𝒇𝒆𝒓𝒆𝒄𝒆 𝒖𝒎𝒂 𝒂𝒎𝒑𝒍𝒂 𝒗𝒂𝒓𝒊𝒆𝒅𝒂𝒅𝒆 𝒅𝒆 𝒍𝒊𝒗𝒓𝒐𝒔,
             𝒅𝒆𝒔𝒅𝒆 𝒄𝒍𝒂́𝒔𝒔𝒊𝒄𝒐𝒔 𝒅𝒂 𝒍𝒊𝒕𝒆𝒓𝒂𝒕𝒖𝒓𝒂 𝒎𝒖𝒏𝒅𝒊𝒂𝒍 𝒂𝒕𝒆́ 𝒍𝒂𝒏𝒄̧𝒂𝒎𝒆𝒏𝒕𝒐𝒔
@@ -117,23 +71,21 @@
         <div class="wrap">
             <div id="produtos-container" class="row center"></div>
         </div>
-    </div>
-
-    <!-- Footer com ID para âncora -->
+   </div>
     <footer id="contato">
         <div class="footer-content">
             <div class="footer-section">
                 <h4>Contato</h4>
                 <p><i class="bi bi-whatsapp"></i> (41) 99618-4213</p>
             </div>
-            
+           
             <div class="footer-section">
                 <h4>Endereço</h4>
                 <p><i class="bi bi-geo-alt"></i> Rua dos Livros, 123</p>
                 <p>Sala TOP - Sacolas</p>
                 <p>Xique-Xique/BA - CEP 01000-000</p>
             </div>
-            
+           
             <div class="footer-section">
                 <h4>Redes Sociais</h4>
                 <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dpt_BR">
@@ -144,11 +96,12 @@
                 </a>
             </div>
         </div>
-        
+       
         <div class="footer-bottom">
             <p>&copy; 2023 Globaolibrary. Todos os direitos reservados.</p>
         </div>
     </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

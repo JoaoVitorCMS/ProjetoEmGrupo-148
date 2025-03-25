@@ -1,93 +1,95 @@
- [
+
+[
     {
         "id":1,
-        "descricao": "Produto 1",
+        "descricao": "A Arte de viver",
         "imagem": "../Assests/Imagens/livro1.jpg",
         "preco": 15.0
     },
     {
         "id":2,
-        "descricao": "Produto 2",
+        "descricao": "1984",
         "imagem": "../Assests/Imagens/livro2.jpg",
         "preco": 20.0
     },
     {
         "id":3,
-        "descricao": "Produto 3",
+        "descricao": "A Arte da guerra",
         "imagem":  "../Assests/Imagens/livro3.jpg",
         "preco": 16.0
     },
     {
         "id":4,
-        "descricao": "Produto 4",
+        "descricao": "Coleção de Harry Potter",
         "imagem": "../Assests/Imagens/livro4.jpg",
         "preco": 60.0
     },
     {
         "id":5,
-        "descricao": "Produto 5",
+        "descricao": "Desenhos ocultos",
         "imagem": "../Assests/Imagens/livro5.jpg",
         "preco": 25.0
     },
     {
         "id":6,
-        "descricao": "Produto 6",
+        "descricao": "Eu,Robô",
         "imagem":  "../Assests/Imagens/livro6.jpg",
         "preco": 30.0
-    
+   
     },
     {
         "id":7,
-        "descricao": "Produto 7",
+        "descricao": "It, A Coisa",
         "imagem": "../Assests/Imagens/livro7.jpg",
         "preco": 150.0
     },
     {
         "id":8,
-        "descricao": "Produto 8",
+        "descricao": "Jogos Vorazes",
         "imagem": "../Assests/Imagens/livro8.jpg",
         "preco": 20.0
     },
     {
         "id":9,
-        "descricao": "Produto 9",
+        "descricao": "Manual completo de informatica para concursos",
         "imagem":  "../Assests/Imagens/livro9.jfif",
         "preco": 50.0
     },
     {
         "id":10,
-        "descricao": "Produto 10",
+        "descricao": "O Herói de mil faces",
         "imagem": "../Assests/Imagens/livro10.jpg",
         "preco": 35.0
     },
     {
         "id":11,
-        "descricao": "Produto 11",
+        "descricao": "O livro da decisão",
         "imagem": "../Assests/Imagens/livro11.jpg",
         "preco": 20.0
     },
     {
         "id":12,
-        "descricao": "Produto 12",
+        "descricao": "O Poder",
         "imagem":  "../Assests/Imagens/livro12.jpg",
         "preco": 80.0
     },
 
+
     {
         "id":13,
-        "descricao": "Produto 13",
+        "descricao": "O Principe",
         "imagem": "../Assests/Imagens/livro13.jpg",
         "preco": 39.0
     },
     {
         "id":14,
-        "descricao": "Produto 14",
+        "descricao": "As 48 leis do poder",
         "imagem": "../Assests/Imagens/livro14.jpg",
         "preco": 27.0
     },
     {
         "id":15,
-        "descricao": "Produto 15",
+        "descricao": "Sobre o erro",
         "imagem":  "../Assests/Imagens/livro15.jpg",
         "preco": 45.0
     }
